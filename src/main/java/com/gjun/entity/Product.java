@@ -1,6 +1,5 @@
 package com.gjun.entity;
 
-import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -18,14 +17,12 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Builder
 @Table(name = "product")
-@Schema(description = "會員資料模型")
 public class Product extends BaseEntity {
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   @Column(name = "product_id")
   private Integer id;
-  @Schema(description = "會員姓名", example = "王小明")
   @Column(name = "product_name")
   private String name;
   @Column(name = "product_description")
