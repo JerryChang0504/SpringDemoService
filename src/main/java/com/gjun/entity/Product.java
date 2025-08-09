@@ -39,6 +39,7 @@ public class Product extends BaseEntity {
 	private Integer price;
 
 	@Column(name = "product_image")
+	@Schema(description = "產品圖片路徑", example = "macbookpro.png")
 	private String image;
 
 }
