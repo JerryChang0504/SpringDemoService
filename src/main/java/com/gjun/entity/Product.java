@@ -34,11 +34,9 @@ public class Product extends BaseEntity {
 	@Column(name = "product_description")
 	private String description;
 
-	@Schema(description = "產品價格", example = "27900")
 	@Column(name = "product_price")
 	private Integer price;
 
-	@Schema(description = "產品照片", example = "iphone15.png")
 	@Column(name = "product_image")
 	private String image;
 
