@@ -45,6 +45,7 @@ public class StartupRunner implements ApplicationRunner {
 			System.err.println("資料庫連線失敗：" + e.getMessage());
 		}
 		// 確認連線是否成功
+		// test
 	}
 
 	private boolean checkProductTable(DatabaseMetaData metaData) throws SQLException {
