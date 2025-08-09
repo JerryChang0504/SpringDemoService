@@ -19,17 +19,17 @@ import lombok.NoArgsConstructor;
 @Table(name = "product")
 public class Product extends BaseEntity {
 
-  @Id
-  @GeneratedValue(strategy = GenerationType.IDENTITY)
-  @Column(name = "product_id")
-  private Integer id;
-  @Column(name = "product_name")
-  private String name;
-  @Column(name = "product_description")
-  private String description;
-  @Column(name = "product_price")
-  private Integer price;
-  @Column(name = "product_image")
-  private String image;
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "product_id")
+	private Integer id;
+	@Column(name = "product_name")
+	private String name;
+	@Column(name = "product_description")
+	private String description;
+	@Column(name = "product_price")
+	private Integer price;
+	@Column(name = "product_image")
+	private String image;
 
 }
