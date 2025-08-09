@@ -30,8 +30,6 @@ public class Product extends BaseEntity {
 	@Column(name = "product_name")
 	private String name;
 
-	@Schema(description = "產品描述", example = "MAC")
-	@Column(name = "product_description")
 	private String description;
 
 	@Column(name = "product_price")
