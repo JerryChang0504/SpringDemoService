@@ -35,7 +35,6 @@ public class Product extends BaseEntity {
 	private String description;
 
 	@Column(name = "product_price")
-	@Schema(description = "產品價格", example = "1000")
 	private Integer price;
 
 	@Column(name = "product_image")
